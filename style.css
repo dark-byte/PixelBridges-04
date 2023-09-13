@@ -19,6 +19,8 @@ body{
 }
 
 
+
+
 /* GLOBAL STYLES */
 
 .btn-primary{
@@ -40,6 +42,13 @@ body{
     font-weight: 800;
 }
 
+.btn-round{
+    font-size: 24px;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    margin-top: 5rem;
+}
+
 button{
     border: none;
     cursor: pointer;
@@ -53,8 +62,7 @@ section{
 
 nav{
     display: flex;
-    margin: 1.25rem 3.5rem;
-    padding: 1rem;
+    padding: 2.25rem 4.5rem;
     justify-content: space-between;
     align-items: center;
 }
@@ -83,7 +91,7 @@ nav h3{
     font-size: 18px;
 }
 
-.nav-links a{
+.nav-links a, .social-btn-group a{
     text-decoration: none;
     color:#fff;
     font-size: 18px;
@@ -91,8 +99,19 @@ nav h3{
     font-weight: 500;
 }
 
-.nav-links a:hover{
+
+.nav-links a:hover, .social-btn-group a:hover{
     color: var(--primary);
+}
+
+.nav-links svg, .social-btn-group svg{
+    fill: #fff;
+    margin: auto;
+    vertical-align: middle;
+}
+
+.nav-links svg:hover, .social-btn-group svg:hover{
+    fill: var(--primary);
 }
 
 .hero-btn-left{
@@ -193,7 +212,445 @@ nav h3{
     text-align: left;
 }
 
+.we-are{
+    flex-direction: column;
+    align-items: center;
+}
+
+.we-are>h2{
+    font-size: 48px;
+    margin-top: 9rem;
+    margin-bottom: 2.5rem;
+}
+
+.green-box img{
+    max-width: 100%;
+}
+
+.green{
+    color: var(--primary);
+}
+
+.green-box-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 25px;
+    padding: 60px;
+    text-align: center;
+}
+
 .green-box{
     background: linear-gradient(180deg, rgba(0, 200, 64, .23), rgba(0, 11, 23, .23));
     border: 1px solid #51f585;
+    height: 530px;
+    width: 100%;
+    padding: 10px;
+}
+
+.green-box h2{
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 1.25rem;
+}
+
+.green-box p{
+    font-size: 20px;
+    max-width: 300px;
+    margin-top: 1.25rem;
+}
+
+.main-activity{
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 60px;
+}
+
+.main-activity h1{
+    font-size: 72px;
+}
+
+.main-activity h3{
+    font-size: 48px;
+    margin-top: 5rem;
+}
+
+.omega-fund{
+    width: 100%;
+    text-align: center;
+    display: grid;
+    padding: 4rem 0;
+    grid-template-columns: auto auto auto;
+}
+
+.omega-fund h4{
+    font-size: 48px;
+    color: var(--primary);
+}
+
+.omega-fund p{
+    font-size: 20px;
+}
+
+.launchpad{
+    flex-direction: column;
+    margin: 5rem 0;
+    padding: 0 60px;
+    text-align: center;
+}
+
+.launchpad h1{
+    font-size: 72px;
+}
+
+.launchpad img{
+    margin: 2.5rem 60px;
+}
+
+.para{
+    margin: auto;
+    text-align: center;
+    width: 75%;
+}
+
+.para p{
+    font-size: 32px;
+}
+
+.roadmap{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 5rem 60px;
+}
+
+.roadmap h1{
+    font-size: 72px;
+}
+
+.roadmap img{
+    padding: 5rem 70px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(2 24 51);
+    padding: 5rem;
+}
+
+footer img{
+    height: 50px;
+    margin-bottom: 1rem;
+}
+
+.social-btn-group a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+
+/* LUANCHPAD CSS */
+
+.launchpad-body {
+    background: linear-gradient(rgb(4, 7, 13),rgb(5, 24, 47), rgb(0, 31, 63));
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.launchpad-nav{
+    width: 100%;
+    margin: 0;
+    padding: 1rem 3.5rem;
+    background: rgb(3, 13, 25);
+}
+
+.launchpad-nav .nav-links{
+    margin-left: 5rem;
+}
+
+.launchpad-nav .nav-links a{
+    margin-right: 2rem;
+    font-weight: 700;
+}
+
+.nav-link-btns{
+    display: flex;
+    align-items: center;
+}
+
+.nav-link-btns div{
+    height: 50px;
+    margin-right: 1rem;
+    border: 1px solid rgb(0, 32, 67);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: linear-gradient(rgb(0, 35, 73) 0%, rgba(0, 11, 23, 0) 100%);
+}
+
+.nav-link-btns button{
+    background-color: #0E76FD;
+    border-radius: 12px;
+    padding: 0 14px;
+    height: 40px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.launchpad-content, .vault-content{
+    display: flex;
+    justify-content: center;
+}
+
+.private-sale{
+    margin-top: 3.5rem;
+    background: linear-gradient(rgb(0, 35, 73) 0%, rgba(0, 11, 23, 0) 100%);
+    width: 900px;
+    border: 1px #fff solid;
+    border-radius: 0.4rem;
+}
+
+.private-sale>p{
+    margin: 2.5rem;
+    margin-bottom: 5rem;
+}
+
+.private-sale-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+}
+
+.private-sale-top h2{
+    padding: 7px;
+    border: 2px solid rgba(128, 128, 128, 0.1);
+    border-radius: 0.4rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.private-sale-middle{
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.private-sale-middle>p{
+    margin-top: 0.5rem;
+}
+
+.private-sale-middle>hr{
+    height: 0px;
+    border: 1px #fff solid;
+    border-width: 0 0 1px;
+    opacity: 0.6;
+    margin-top: 0.5rem;
+}
+
+.sale-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2.5rem;
+    border-radius: 0.4rem;
+    padding: 1rem;
+    background: rgba(42, 67, 101, 0.4);
+}
+
+.sale-grid>div{
+    display: flex;
+    justify-content: space-between;
+    padding: 7px;
+    border-radius: 0.4rem;
+    border: 2px solid rgba(173, 216, 230, 0.1);
+    background: rgb(42, 67, 101);
+}
+
+/* END */
+
+
+/* VAULT CSS */
+
+.vault-content{
+    margin-bottom: 2rem;
+}
+
+.vault-card-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2.5rem;
+    margin-top: 3.5rem;
+}
+
+.vault-card{
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgb(0, 35, 73) 0%, rgba(0, 11, 23, 0) 100%);
+    border-radius: 10px;
+    padding: 1.25rem 2rem;
+    font-weight: 500;
+    border: 1px solid gray;
+}
+
+.vault-card>p{
+    font-weight: 600;
+    color: rgb(132, 132, 132);
+}
+
+.vault-card>h1{
+    font-size: 170px;
+    padding: 1.25rem;
+}
+
+.vc-1>h1{
+    color: rgb(84, 166, 255);
+}
+
+.vc-2>h1{
+    color: rgb(0, 192, 61);
+}
+
+.vc-3>h1{
+    color: rgb(186, 144, 0);
+}
+
+.vault-details{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 50%;
+    gap: 1rem;
+}
+
+.skeleton{
+    background-color: rgba(201, 201, 201, 0.353);
+    height: 100%;
+    border-radius: 2px;
+}
+
+.vault-quantity{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vault-quantity input{
+    border: 1px solid #CBD5E0;
+    background: transparent;
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    color: #fff;
+    font-size: 1rem;
+    max-width: 50%;
+    border-radius: 0.4rem;
+    margin-left: 1rem;
+}
+
+.vault-select-btn{
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    width: 150px;
+    background-color: rgb(0, 192, 61);
+    border-radius: 0.4rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.vault-select-btn:hover{
+    background-color: rgb(56, 233, 112);
+}
+
+/* END */
+
+.footer-alt{
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+    background: none;
+}
+
+.footer-alt h3{
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 100%;
+}
+
+.footer-alt img{
+    margin: 0;
+}
+
+
+
+/* REWARD CSS */
+
+.reward-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reward-body>h1{
+    font-size: 1.875rem;
+}
+
+.rewards-card-container{
+    display: flex;
+}
+
+.reward-card{
+    width: 370px;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 0.4rem;
+    margin-right: 2.5rem;
+    padding: 2rem 1.25rem;
+    background: linear-gradient(rgb(0, 35, 73) 0%, rgba(0, 11, 23, 0) 100%);
+}
+
+
+.row{
+    display: flex;
+}
+
+.col{
+    margin: 1rem;
+}
+
+.col>p{
+    color: rgb(0, 192, 61);
+}
+
+.reward-card .skeleton{
+    margin-top: 0.5rem;
+    height: 24px;
+}
+
+
+
+/* END */
+
+
+.reward-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
