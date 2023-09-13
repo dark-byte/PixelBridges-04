@@ -120,7 +120,7 @@ nav h3{
 }
 
 .hero{
-    height: 84vh;
+    height: 86vh;
 }
 
 .hero-left{
@@ -648,9 +648,45 @@ footer img{
 /* END */
 
 
-.reward-body{
+.reward-body, .fund-content{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+.fund-content{
+    width: 100vw;
+}
+
+.fund-head{
+    text-align: center;
+}
+
+.fund-head h2{
+    font-size: 48px;
+    color: rgb(0, 192, 61);
+}
+
+.fund-content .omega-fund h4{
+    color: rgb(0, 192, 61);
+}
+
+.fund-bottom{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fund-bottom>div{
+    text-align: center;
+}
+
+.fund-bottom p{
+    font-size: 24px;
+}
+
+.fund-bottom h4{
+    font-size: 34px;
+    color: rgb(0, 192, 61);
 }
