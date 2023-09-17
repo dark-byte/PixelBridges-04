@@ -94,7 +94,6 @@ nav h3{
 .nav-links a, .social-btn-group a{
     text-decoration: none;
     color:#fff;
-    font-size: 18px;
     margin-right: 50px;
     font-weight: 500;
 }
@@ -107,7 +106,19 @@ nav h3{
 .nav-links svg, .social-btn-group svg{
     fill: #fff;
     margin: auto;
+    height: 30px;
+    width: 30px;
+    margin-right: 1rem;
     vertical-align: middle;
+}
+
+.social-btn-group a:nth-child(2), .social-btn-group a:nth-child(2) svg{
+    margin-right: 0;
+}
+
+.x-svg svg{
+    height: 25px;
+    width: 25px;
 }
 
 .nav-links svg:hover, .social-btn-group svg:hover{
@@ -157,7 +168,8 @@ nav h3{
 }
 
 .hero-right img{
-    width: 600px;
+    width: 140%;
+    max-width: 600px;
 }
 
 .about{
@@ -233,7 +245,8 @@ nav h3{
 
 .green-box-container{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 25px;
     padding: 60px;
     text-align: center;
@@ -242,8 +255,7 @@ nav h3{
 .green-box{
     background: linear-gradient(180deg, rgba(0, 200, 64, .23), rgba(0, 11, 23, .23));
     border: 1px solid #51f585;
-    height: 530px;
-    width: 100%;
+    min-height: 530px;
     padding: 10px;
 }
 
@@ -329,6 +341,7 @@ nav h3{
 
 .roadmap img{
     padding: 5rem 70px;
+    width: 100%;
 }
 
 footer{
@@ -689,4 +702,8 @@ footer img{
 .fund-bottom h4{
     font-size: 34px;
     color: rgb(0, 192, 61);
+}
+
+.read-doc-btn{
+    margin: 0 2rem;
 }
